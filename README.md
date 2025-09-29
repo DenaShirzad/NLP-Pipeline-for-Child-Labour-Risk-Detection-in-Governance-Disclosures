@@ -18,7 +18,7 @@ This repository contains the code and notebooks developed for the Applied Data S
 
 ## Datasets
 
-Datasets are private and owned by HACE. Therefore acess to these must be requested
+Datasets are private and owned by HACE. Therefore acess to these must be requested.
 
 ## Requirements
 
@@ -39,8 +39,8 @@ Main libraries used:
 2.  Clone this repository:
 
     ```bash
-    git clone [https://github.com/zubier3/ADS_HACE_G3.git](https://github.com/zubier3/ADS_HACE_G3.git)
-    cd ADS_HACE_G3
+    git clone [https://github.com/DenaShirzad/HACE.git](https://github.com/DenaShirzad/HACE.git)
+    cd HACE
     ```
 3.  Create the Conda environment from the `environment.yml` file:
 
@@ -50,7 +50,7 @@ Main libraries used:
 4.  Activate the environment:
 
     ```bash
-    conda activate ads_hace_g3
+    conda activate HACE
     ```
 5.  Install required NLTK data:
 
