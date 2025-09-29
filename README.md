@@ -8,21 +8,23 @@ This repository contains the code and notebooks developed for the Applied Data S
 
 | Notebook | Description |
 |----------|-------------|
-| `01_02_Preprocessing_EDA.ipynb` | Preprocessing of governance documents and exploratory data analysis. This includes cleaning text, tokenisation, lemmatisation, and visualisation of goods mentions. |
+| `01_02_Preprocessing_EDA.ipynb` | Preprocessing of governance documents and exploratory data analysis. Includes cleaning text, tokenisation, lemmatisation, and visualisation of goods mentions. |
 | `03_Context_Classifier.ipynb` | Development and evaluation of a supervised machine learning model to classify the contextual relevance of ambiguous goods mentions (e.g., "gold"). |
-| `04_Company_Scoring(i).ipynb` | Step 1 of company-level scoring: aggregating detected relevant goods mentions and associating them with company names. |
-| `04_Company_Scoring(ii).ipynb` | Step 2: refining entity matches, resolving duplicates, and cleaning references across documents. |
-| `04_Company_Scoring(iii).ipynb` | Final scoring logic: generating risk indicators and summary tables per company based on detected mentions. |
+| `04_Company_Scoring_Part1.ipynb` | Company-level scoring step 1: aggregating detected relevant goods mentions and associating them with company names. |
+| `04_Company_Scoring_Part2.ipynb` | Company-level scoring step 2: refining entity matches, resolving duplicates, and cleaning references across documents. |
+| `04_Company_Scoring_Part3.ipynb` | Final scoring logic: generating risk indicators and summary tables per company based on detected mentions. |
 
 ---
 
 ## Datasets
 
-Datasets are private and owned by HACE. Therefore acess to these must be requested.
+The datasets are private and owned by HACE. Access must be requested directly from HACE.
+
+---
 
 ## Requirements
 
-This project uses a Conda environment to manage dependencies. The required packages are specified in the environment.yml file.
+This project uses a Conda environment to manage dependencies. The required packages are specified in the `environment.yml` file.
 
 Main libraries used:
 - `pandas`
@@ -33,48 +35,60 @@ Main libraries used:
 - `xgboost`
 - `tqdm`
 
+---
+
 ## Environment Setup
 
-1.  Ensure [Conda](https://docs.conda.io/en/latest/) is installed (e.g., via Miniconda or Anaconda).
-2.  Clone this repository:
+1. Ensure [Conda](https://docs.conda.io/en/latest/) is installed (e.g., via Miniconda or Anaconda).
+2. Clone this repository:
 
     ```bash
-    git clone [https://github.com/DenaShirzad/HACE.git](https://github.com/DenaShirzad/HACE.git)
+    git clone https://github.com/DenaShirzad/HACE.git
     cd HACE
     ```
-3.  Create the Conda environment from the `environment.yml` file:
+3. Create the Conda environment from the `environment.yml` file:
 
     ```bash
     conda env create -f environment.yml
     ```
-4.  Activate the environment:
+4. Activate the environment:
 
     ```bash
     conda activate HACE
     ```
-5.  Install required NLTK data:
+5. Install required NLTK data:
 
     ```python
     import nltk
     nltk.download('punkt')
-    nltk.download('punkt_tab')
     nltk.download('stopwords')
     nltk.download('wordnet')
     ```
-6.  Install the SpaCy language model (e.g., English small model):
+6. Install the SpaCy language model (e.g., English small model):
 
     ```bash
     python -m spacy download en_core_web_sm
     ```
 
+---
+
 ## Running the Project
 
-Open JupyterLab or VS Code with the `ads_hace_g3` environment activated. Run the notebooks in the following order:
+Open JupyterLab or VS Code with the `HACE` environment activated. Run the notebooks in the following order:
 
-1.  `01_02_Preprocessing_EDA.ipynb`
-2.  `03_Context_Classifier.ipynb`
-3.  `04_Company_Scoring(i).ipynb`
-4.  `04_Company_Scoring(ii).ipynb`
-5.  `04_Company_Scoring(iii).ipynb`
+1. `01_02_Preprocessing_EDA.ipynb`
+2. `03_Context_Classifier.ipynb`
+3. `04_Company_Scoring_Part1.ipynb`
+4. `04_Company_Scoring_Part2.ipynb`
+5. `04_Company_Scoring_Part3.ipynb`
 
 Ensure access to the HACE datasets before running the notebooks, as they are required for data processing.
+
+---
+
+## Outputs
+
+The notebooks generate the following outputs:
+- Cleaned and preprocessed governance text data
+- Classification metrics for contextual goods mention detection
+- Company-level risk indicators and summary tables
