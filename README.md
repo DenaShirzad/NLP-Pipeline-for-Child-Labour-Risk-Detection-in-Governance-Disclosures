@@ -43,8 +43,8 @@ Main libraries used:
 2. Clone this repository:
 
     ```bash
-    git clone https://github.com/DenaShirzad/HACE.git
-    cd HACE
+    git clone https://github.com/DenaShirzad/NLP-Pipeline-for-Child-Labour-Risk-Detection-in-Governance-Disclosures.git
+    cd NLP-Pipeline-for-Child-Labour-Risk-Detection-in-Governance-Disclosures
     ```
 3. Create the Conda environment from the `environment.yml` file:
 
