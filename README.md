@@ -1,4 +1,4 @@
-# ADS_HACE_G3: NLP Pipeline for Child Labour Risk Detection in Governance Disclosures
+# NLP Pipeline for Child Labour Risk Detection in Governance Disclosures
 
 This repository contains the code and notebooks developed for the Applied Data Science group project in collaboration with **HACE: Data Changing Child Labour**. The goal of the project is to detect and assess references to goods associated with child labour in corporate governance disclosures using natural language processing (NLP).
 
