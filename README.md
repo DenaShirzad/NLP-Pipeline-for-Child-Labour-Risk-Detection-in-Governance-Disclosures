@@ -84,11 +84,4 @@ Open JupyterLab or VS Code with the `HACE` environment activated. Run the notebo
 
 Ensure access to the HACE datasets before running the notebooks, as they are required for data processing.
 
----
 
-## Outputs
-
-The notebooks generate the following outputs:
-- Cleaned and preprocessed governance text data
-- Classification metrics for contextual goods mention detection
-- Company-level risk indicators and summary tables
